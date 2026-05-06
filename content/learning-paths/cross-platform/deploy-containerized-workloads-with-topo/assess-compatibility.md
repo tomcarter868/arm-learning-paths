@@ -134,6 +134,10 @@ Run the health command again to verify installation. Topo uses `remoteproc-runti
 
 You have now verified your host and target environments, resolved any missing dependencies, and (optionally) enabled heterogeneous deployment. Next, you will generate a target description and list compatible templates.
 
+## What you've accomplished and what's next
+
+You have performed a health check on your target device, generated a description of its hardware features, and identified compatible templates. In the next step, you will choose and deploy a template containerized workload.
+
 ## Generate a target description
 
 In this step, you ask Topo to probe your target and output a description of the hardware in your terminal. 
