@@ -1,4 +1,3 @@
-
 ---
 title: Verify OpenJDK PAC/BTI on Google Cloud C4A VMs
 description: Validate PAC/BTI support in OpenJDK on a Google Cloud C4A Arm-based VM and interpret JVM security readiness for Armv9 workloads.
