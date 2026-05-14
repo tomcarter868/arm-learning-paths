@@ -5,9 +5,18 @@ minutes_to_complete: 30
 weight: 1
 layout: "learningpathall"
 learning_path_main_page: "yes"
+learning_objectives: 
+    - Provision a Google Cloud C4A Arm-based virtual machine with SUSE Linux Enterprise Server.
+    - Install OpenJDK on the Arm-based VM.
+    - Verify PAC/BTI readiness in the installed JVM runtime.
 prerequisites:
+<<<<<<< HEAD
   - A [Google Cloud Platform (GCP)](https://cloud.google.com/free) account with billing enabled
   - Optionally, [gcloud CLI](/install-guides/gcloud/) to connect to the VM from a local terminal instead of using the browser-based SSH
+=======
+    - A [Google Cloud Platform (GCP)](https://cloud.google.com/free) account with billing enabled
+    - Optionally, [install the gcloud CLI](/install-guides/gcloud/) to connect to the VM from a local terminal instead of using the browser-based SSH
+>>>>>>> ee5f1ddbeb95e52f2107cc8aa6ed8574c5fe0caf
 author: Doug Anson
 skilllevels: Introductory
 subjects: Performance and Architecture
