@@ -6,28 +6,28 @@ weight: 5
 layout: learningpathall
 ---
 
-## Install the Oracle JDK
+## Install Oracle JDK
 
-The SUSE-packaged OpenJDK 17 confirmed that the C4A platform exposes PAC and BTI, but its JIT compiler does not emit PAC/BTI instructions. Oracle's JDK 21 for Linux/AArch64 is built with `--enable-branch-protection`, so the JIT compiler generates PAC/BTI instructions in compiled Java code.
+The SUSE-packaged OpenJDK 17 confirms that the C4A platform exposes PAC and BTI, but its JIT compiler does not emit PAC/BTI instructions. Oracle's JDK 21 for Linux/AArch64 is built with `--enable-branch-protection`, so the JIT compiler generates PAC/BTI instructions in compiled Java code.
 
-Download and install Oracle JDK 21:
+To install Oracle JDK 21, download and extract the archive:
 
 ```bash
 curl -LO https://download.oracle.com/java/21/latest/jdk-21_linux-aarch64_bin.tar.gz
 tar xzf jdk-21_linux-aarch64_bin.tar.gz
 ```
 
-Confirm the installation:
+To confirm the installation, check the Java version:
 
 ```bash
 ./jdk-21.0.11/bin/java --version
 ```
 
 {{% notice Note %}}
-The minor version number in the directory name (e.g., `21.0.11`) may differ depending on when you download. Check the extracted directory name with `ls` and adjust the path accordingly.
+The minor version number in the directory name (for example, `21.0.11`) may differ depending on when you download. Check the extracted directory name with `ls` and adjust the path accordingly.
 {{% /notice %}}
 
-The output is similar to:
+The expected output is similar to:
 
 ```output
 java version 21.0.11 2026-04-21 LTS
@@ -35,9 +35,9 @@ Java(TM) SE Runtime Environment (build 21.0.11+9-LTS-211)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.11+9-LTS-211, mixed mode, sharing)
 ```
 
-## Run the PAC/BTI test with the Oracle JDK
+## Run the PAC/BTI test with Oracle JDK
 
-Use the same `test-pacbti.sh` script from the previous step, pointing it at the Oracle JDK:
+Use the same `test-pacbti.sh` script from the previous step, but point it at the Oracle JDK:
 
 ```bash
 JAVA=./jdk-21.0.11/bin/java ./test-pacbti.sh

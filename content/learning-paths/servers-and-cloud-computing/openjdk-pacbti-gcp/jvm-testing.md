@@ -8,7 +8,7 @@ layout: learningpathall
 
 ## Install the default OpenJDK JVM
 
-Install the default OpenJDK Java VM:
+To install the default OpenJDK Java VM on SUSE Linux Enterprise Server, run the following commands in your VM terminal:
 
 ```bash
 sudo zypper refresh
@@ -21,7 +21,7 @@ Confirm the newly installed JVM:
 java --version
 ```
 
-The output is similar to:
+The expected output is similar to:
 
 ```output
 openjdk 17.0.13 2024-10-15
@@ -29,9 +29,9 @@ OpenJDK Runtime Environment (build 17.0.13+11-suse-150400.3.48.2-aarch64)
 OpenJDK 64-Bit Server VM (build 17.0.13+11-suse-150400.3.48.2-aarch64, mixed mode, sharing)
 ```
 
-Next, download and run a script to confirm PAC/BTI readiness in the JVM you just installed.
+## Create and run the PAC/BTI test script
 
-## Create the test script
+Next, you'll create a script to confirm PAC/BTI readiness in the JVM you just installed.
 
 Create a file called `test-pacbti.sh` in your SSH session and paste in the following script:
 
@@ -58,6 +58,21 @@ Create a file called `test-pacbti.sh` in your SSH session and paste in the follo
 #   - NO PAC/BTI SUPPORT:
 #       Platform does not expose PAC/BTI to userspace.
 #
+```
+
+After saving the script, make it executable:
+
+```bash
+chmod +x test-pacbti.sh
+```
+
+Run the script with:
+
+```bash
+./test-pacbti.sh
+```
+
+The script prints a summary at the end indicating the level of PAC/BTI support detected in your JVM and platform.
 # What this tests:
 #   This script does not merely inspect the host from the shell. It launches
 #   a Java probe inside the target JVM. The Java process reads its own

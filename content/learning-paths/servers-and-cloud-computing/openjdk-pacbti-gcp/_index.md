@@ -1,44 +1,24 @@
 ---
 title: Verify OpenJDK PAC/BTI using a Google Cloud C4A VM
-
-description: Learn how to verify PAC/BTI support in OpenJDK on a Google Cloud C4A Arm-based VM and interpret the JVM readiness result.
-
-draft: true
-cascade:
-    draft: true
-    
+description: Validate PAC/BTI support in OpenJDK on a Google Cloud C4A Arm-based VM and interpret JVM security readiness for Java workloads.
 minutes_to_complete: 30
-
-who_is_this_for: This Learning Path is for developers who want to validate OpenJDK PAC/BTI support on Google Cloud C4A Arm-based virtual machines.
-
-learning_objectives: 
-    - Provision a Google Cloud C4A Arm-based virtual machine with SUSE Linux Enterprise Server.
-    - Install OpenJDK on the Arm-based VM.
-    - Verify PAC/BTI readiness in the installed JVM runtime.
-
+weight: 1
+layout: "learningpathall"
+learning_path_main_page: "yes"
 prerequisites:
-    - A [Google Cloud Platform (GCP)](https://cloud.google.com/free) account with billing enabled
-    - Optionally, [install the gcloud CLI](/install-guides/gcloud/) to connect to the VM from a local terminal instead of using the browser-based SSH
-
+  - A [Google Cloud Platform (GCP)](https://cloud.google.com/free) account with billing enabled
+  - [gcloud CLI](/install-guides/gcloud/) (optional, for local terminal SSH)
 author: Doug Anson
-
-### Tags
 skilllevels: Introductory
 subjects: Performance and Architecture
-cloud_service_providers:
-  - Google Cloud
-
 armips:
-    - Neoverse
-
+  - Neoverse
 tools_software_languages:
-    - Java
-    - OpenJDK
-    - Bash
-
+  - Java
+  - OpenJDK
+  - Bash
 operatingsystems:
-    - Linux
-
+  - Linux
 further_reading:
   - resource:
       title: Understand Arm Pointer Authentication
@@ -57,10 +37,10 @@ further_reading:
       link: https://developer.arm.com/documentation/100076/latest/
       type: documentation
 
-
 ### FIXED, DO NOT MODIFY
 # ================================================================================
 weight: 1                       # _index.md always has weight of 1 to order correctly
 layout: "learningpathall"       # All files under learning paths have this same wrapper
 learning_path_main_page: "yes"  # This should be surfaced when looking for related content. Only set for _index.md of learning path content.
+
 ---
