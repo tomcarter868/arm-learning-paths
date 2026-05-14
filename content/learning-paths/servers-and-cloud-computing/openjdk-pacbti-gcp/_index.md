@@ -7,7 +7,7 @@ layout: "learningpathall"
 learning_path_main_page: "yes"
 prerequisites:
   - A [Google Cloud Platform (GCP)](https://cloud.google.com/free) account with billing enabled
-  - [gcloud CLI](/install-guides/gcloud/) (optional, for local terminal SSH)
+  - Optionally, [gcloud CLI](/install-guides/gcloud/) to connect to the VM from a local terminal instead of using the browser-based SSH
 author: Doug Anson
 skilllevels: Introductory
 subjects: Performance and Architecture
